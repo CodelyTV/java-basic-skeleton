@@ -17,6 +17,13 @@ cache:
     - $HOME/.gradle/caches/
     - $HOME/.gradle/wrapper/
 
+# Override default install process on TravisCI
+# Avoid default `gradlew assemble` execution. Be explicit about it on the `script` section.
+# More info: https://github.com/travis-ci/travis-ci/issues/8667
+install: true
+
+# Build pipeline
+# Compile before running the tests in order to easily check which task could be failing.
 script:
-  - ./gradlew assemble # Compile before running the tests in order to check which task could be failing easily
+  - ./gradlew assemble
   - ./gradlew check
