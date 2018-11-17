@@ -18,5 +18,5 @@ cache:
     - $HOME/.gradle/wrapper/
 
 script:
-  ./gradlew assemble # Compile before running the tests in order to check which task could be failing easily
-  ./gradlew check
+  - ./gradlew assemble # Compile before running the tests in order to check which task could be failing easily
+  - ./gradlew check
