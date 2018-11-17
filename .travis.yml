@@ -31,5 +31,5 @@ install: true
 # Build pipeline
 # Compile before running the tests in order to easily check which task could be failing.
 script:
-  - ./gradlew assemble
-  - ./gradlew check
+  - ./gradlew assemble --warning-mode all
+  - ./gradlew check --warning-mode all
