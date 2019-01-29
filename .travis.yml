@@ -7,6 +7,7 @@ jdk:
 
 os:
   - linux
+  - osx
 
 before_cache:
   - rm -f  $HOME/.gradle/caches/modules-2/modules-2.lock
@@ -17,6 +18,11 @@ cache:
     - $HOME/.gradle/caches/
     - $HOME/.gradle/wrapper/
 
+# Run commands before TravisCI install step only in some cases
+# More info: https://docs.travis-ci.com/user/multi-os/#example-multi-os-build-matrix
+before_install:
+  - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then brew update; fi
+
 # Override default install process on TravisCI
 # Avoid default `gradlew assemble` execution. Be explicit about it on the `script` section.
 # More info: https://github.com/travis-ci/travis-ci/issues/8667
@@ -25,5 +31,5 @@ install: true
 # Build pipeline
 # Compile before running the tests in order to easily check which task could be failing.
 script:
-  - ./gradlew assemble
-  - ./gradlew check
+  - ./gradlew assemble --warning-mode all
+  - ./gradlew check --warning-mode all
