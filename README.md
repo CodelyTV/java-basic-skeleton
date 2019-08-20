@@ -6,7 +6,7 @@
 > ⚡ Start your Java projects as fast as possible
 
 [![CodelyTV](https://img.shields.io/badge/codely-tv-green.svg?style=flat-square)](https://codely.tv)
-[![Workflow Status](https://github.com/CodelyTV/java-basic-skeleton/actions)](https://github.com/CodelyTV/java-basic-skeleton/workflows/Main%20Workflow/badge.svg)
+[![Workflow Status](https://github.com/CodelyTV/java-basic-skeleton/workflows/Main%20Workflow/badge.svg)](https://github.com/CodelyTV/java-basic-skeleton/actions)
 
 ## Introduction
 
