@@ -1,4 +1,4 @@
-package tv.codely.java_bootstrap;
+package tv.codely.java_basic_skeleton;
 
 public class Greeter {
 
