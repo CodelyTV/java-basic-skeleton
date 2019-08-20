@@ -10,7 +10,7 @@
 
 ## Introduction
 
-This is a repository intended to serve as a starting point if you want to bootstrap a project in Java with JUnit and Gradle
+This is a repository intended to serve as a starting point if you want to bootstrap a project in Java 8 with JUnit and Gradle
 
 ## How To Start
 
