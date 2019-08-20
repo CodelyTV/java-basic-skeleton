@@ -1,4 +1,4 @@
-name: Java CI
+name: Main Workflow
 
 on: [push]
 
@@ -17,4 +17,4 @@ jobs:
       run: ./gradlew assemble --warning-mode all
     - name: Check
       run: ./gradlew check --warning-mode all
-      
+
