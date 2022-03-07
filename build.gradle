@@ -1,18 +1,18 @@
 apply plugin: 'java'
 
-sourceCompatibility = 11
-targetCompatibility = 11
+sourceCompatibility = 17
+targetCompatibility = 17
 
 repositories {
     mavenCentral()
 }
 
 dependencies {
-    implementation 'org.apache.logging.log4j:log4j-core:2.12.1'
-    implementation 'com.vlkan.log4j2:log4j2-logstash-layout:0.19'
+    implementation 'org.apache.logging.log4j:log4j-core:2.17.0'
+    implementation 'com.vlkan.log4j2:log4j2-logstash-layout:1.0.5'
 
-    testCompile 'org.junit.jupiter:junit-jupiter-api:5.5.1'
-    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.5.1'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.2'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.2'
 }
 
 test {
