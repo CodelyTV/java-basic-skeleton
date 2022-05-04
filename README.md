@@ -14,7 +14,7 @@ This is a repository intended to serve as a starting point if you want to bootst
 
 ## 🏁 How To Start
 
-1. Install Java 17: `brew cask install corretto` or download it [here](https://docs.aws.amazon.com/corretto/latest/corretto-11-ug/downloads-list.html)
+1. Install Java 17: `brew install corretto` or download it [here](https://docs.aws.amazon.com/corretto/latest/corretto-17-ug/downloads-list.html)
 2. Set it as your default JVM: `export JAVA_HOME='/Library/Java/JavaVirtualMachines/amazon-corretto-17.jdk/Contents/Home'`
 3. Clone this repository: `git clone https://github.com/CodelyTV/java-basic-skeleton`.
 4. Execute some [Gradle lifecycle tasks](https://docs.gradle.org/current/userguide/java_plugin.html#lifecycle_tasks) in order to check everything is OK:
